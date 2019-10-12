@@ -47,6 +47,7 @@
     ]
   },
   "dependencies": {
-    "gatsby-plugin-catch-links": "^2.1.13"
+    "gatsby-plugin-catch-links": "^2.1.13",
+    "react-datetime-picker": "^2.7.1"
   }
 }
