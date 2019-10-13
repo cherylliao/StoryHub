@@ -63,7 +63,7 @@ const About: React.FunctionComponent<AboutProps> = props => {
   return (
     <AboutWrapper>
       <AboutPageTitle>
-        <h2>About StoryHub</h2>
+        <h2>About AnarchySrc</h2>
         <p>
         AnarchySrc stands for the rebellious, revolutionary, nationless 
           nature of software source codes.  Software deconstructs all pre-made 
