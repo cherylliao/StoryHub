@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "name": "storyhub-minimal",
-  "alias": "storyhub-minimal",
+  "name": "motobuild",
+  "alias": "motobuild",
   "builds": [
     {
       "use": "@now/static",
       "config": {
-        "distDir": "./packages/personal-blog-minimal/public"
+        "distDir": "./packages/minimal-photography-blog/public"
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/packages/personal-blog-minimal/public/$1",
+      "dest": "/packages/minimal-photography-blog/public/$1",
       "headers": {
         "x-request-path": "$1"
       }
