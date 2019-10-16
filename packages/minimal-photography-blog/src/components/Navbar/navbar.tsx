@@ -30,11 +30,11 @@ const MenuItems = [
     url: "/about",
   },
   {
-    label: "Contact",
+    label: "GET IN TOUCH",
     url: "/contact",
   },
   {
-    label: "404 Page",
+    label: "WHAT BUILDERS SAY ",
     url: "/404",
   },
 ]

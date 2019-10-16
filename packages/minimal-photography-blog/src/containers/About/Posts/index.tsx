@@ -82,6 +82,7 @@ const Posts: React.FunctionComponent<PostsProps> = () => {
 
   return (
     <BlogPostsWrapper>
+        <h5>0.2</h5>
       <SecTitle>Action Shots</SecTitle>
       <PostRow>
         <Masonry className="showcase">
@@ -113,7 +114,7 @@ const Posts: React.FunctionComponent<PostsProps> = () => {
               loader="Loading.."
             />
           ) : (
-            <p>No more posts</p>
+            <p></p>
           )}
         </LoadMoreButton>
       </PostRow>

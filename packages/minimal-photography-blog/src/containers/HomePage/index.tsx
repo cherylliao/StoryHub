@@ -77,6 +77,7 @@ const About: React.FunctionComponent<AboutProps> = props => {
       </AboutPageTitle> */}
 
       <AboutDetails>
+      <h5>0.1</h5>
         <h2>LETS BUILD</h2>
         <p>
         Team Moto Build gives you and your colleagues a chance to build a 

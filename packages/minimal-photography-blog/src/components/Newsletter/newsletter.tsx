@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import addToMailchimp from "gatsby-plugin-mailchimp"
+import Image from "gatsby-image"
 import Input from "components/Input/Input"
 import Button from "components/Button/Button"
 import {
@@ -42,12 +43,13 @@ const Newsletter: React.FunctionComponent<NewsletterProps> = ({ ...props }) => {
   return (
     <NewsletterWrapper {...props}>
       <NewsletterInnerWrapper>
-        <NewsletterTitle>
+        {/* <img src="../../images/engine.jpg" alt="Smiley face" /> */}
+        {/* <NewsletterTitle>
           Get The Best Of All Hands Delivered To Your Inbox
         </NewsletterTitle>
         <NewsletterDescription>
           Subscribe to our newsletter and stay updated.
-        </NewsletterDescription>
+        </NewsletterDescription> */}
 
         <NewsletterInputWrapper onSubmit={handleSubmit}>
           {success ? (
@@ -62,7 +64,7 @@ const Newsletter: React.FunctionComponent<NewsletterProps> = ({ ...props }) => {
                 value={email}
                 required
               />
-              <Button title="Subscribe" type="submit" />
+              <Button title="DROP US A LINE >>" type="submit" />
             </>
           )}
         </NewsletterInputWrapper>
