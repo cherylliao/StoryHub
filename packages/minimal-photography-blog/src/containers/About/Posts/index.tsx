@@ -83,7 +83,7 @@ const Posts: React.FunctionComponent<PostsProps> = () => {
   return (
     <BlogPostsWrapper>
         <h5>0.2</h5>
-      <SecTitle>Action Shots</SecTitle>
+      <SecTitle style={{color:'#e60000'}}>Action Shots</SecTitle>
       <PostRow>
         <Masonry className="showcase">
           {Posts.slice(0, state.visibile).map(({ node }: any) => {

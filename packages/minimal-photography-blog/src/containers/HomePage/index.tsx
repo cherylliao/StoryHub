@@ -78,7 +78,7 @@ const About: React.FunctionComponent<AboutProps> = props => {
 
       <AboutDetails>
       <h5>0.1</h5>
-        <h2>LETS BUILD</h2>
+        <h2 style={{color:'#e60000'}}>LETS BUILD</h2>
         <p>
         Team Moto Build gives you and your colleagues a chance to build a 
         Honda CB350 from the ground up in a true rider’s playground. Gather your teams (up to four teams of six 
