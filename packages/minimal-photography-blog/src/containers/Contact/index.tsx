@@ -92,9 +92,11 @@ const Contact: React.SFC<{}> = () => {
                 Interest sparked in Team Moto Build? Ready to rev? Give us your deets, ask us any questions and tell us your 
                 team size and target dates for your build. We’ll be in touch in a flash.
                 </p>
+               
                 <h3>
-                Phone: 312.953.0869 Email: Fun@TeamMotoBuild.com
-                </h3>
+                Phone:  
+                </h3><h4 style={{color:'#e60000'}}>312.953.0869</h4>
+                <h3>Email:</h3> <h4>Fun@TeamMotoBuild.com</h4>
               </ContactPageTitle>
               <ContactFromWrapper>
                 <InputGroup>
