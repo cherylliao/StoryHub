@@ -53,7 +53,7 @@ const ImageCard: React.FunctionComponent<ImageCardProps> = ({
         </PostPreview>
       )}
 
-      <PostDetails className="post_details">
+      {/* <PostDetails className="post_details">
         {tags == null ? null : (
           <PostMeta>
             <PostTags className="post_tags">
@@ -81,7 +81,7 @@ const ImageCard: React.FunctionComponent<ImageCardProps> = ({
         <ReadMore className="read_more">
           <Link to={url}>Read More</Link>
         </ReadMore>
-      </PostDetails>
+      </PostDetails> */}
     </ImageCardWrapper>
   )
 }
