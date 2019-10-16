@@ -66,7 +66,7 @@ const NotFound: React.FunctionComponent<AboutProps> = props => {
     <AboutWrapper>
       
       <h5>0.4</h5>
-        <h2 style={{color:'#e60000'}}>WHAT BUILDERS SAY</h2>
+        <h2 style={{color:'#cd1b21'}}>WHAT BUILDERS SAY</h2>
       <TestImage>
       <img src={test1} alt="test" />
       </TestImage>

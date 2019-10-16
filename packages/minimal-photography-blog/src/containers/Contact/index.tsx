@@ -87,7 +87,7 @@ const Contact: React.SFC<{}> = () => {
             <ContactWrapper>
               <ContactPageTitle>
               <h5>0.3</h5>
-                <h2 style={{color:'#e60000'}}>GET IN TOUCH</h2>
+                <h2 style={{color:'#cd1b21'}}>GET IN TOUCH</h2>
                 <p>
                 Interest sparked in Team Moto Build? Ready to rev? Give us your deets, ask us any questions and tell us your 
                 team size and target dates for your build. We’ll be in touch in a flash.
@@ -95,7 +95,7 @@ const Contact: React.SFC<{}> = () => {
                
                 <h3>
                 Phone:  
-                </h3><h4 style={{color:'#e60000'}}>312.953.0869</h4>
+                </h3><h4 style={{color:'#cd1b21'}}>312.953.0869</h4>
                 <h3>Email:</h3> <h4>Fun@TeamMotoBuild.com</h4>
               </ContactPageTitle>
               <ContactFromWrapper>
