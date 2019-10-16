@@ -119,7 +119,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: '', // add your MC list endpoint here; see instructions below
+        endpoint: 'https://<dc>.api.mailchimp.com/export/1.0/', // add your MC list endpoint here; see instructions below
       },
     },
     {

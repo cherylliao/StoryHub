@@ -3,16 +3,51 @@ import { Formik, FormikActions, FormikProps, Form } from "formik"
 import * as Yup from "yup"
 import Input from "components/Input/Input"
 import Button from "components/Button/Button"
+import SocialProfile from "components/SocialProfile/SocialProfile"
+import {
+  IoLogoFacebook,
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+} from "react-icons/io"
 import {
   ContactWrapper,
   ContactPageTitle,
   ContactFromWrapper,
   InputGroup,
 } from "./style"
+import {
+ 
+  SocialProfiles
+} from "./style"
+const SocialLinks = [
+  {
+    icon: <IoLogoFacebook />,
+    url: "https://www.facebook.com/teammotobuild/",
+    tooltip: "Facebook",
+  },
+  {
+    icon: <IoLogoInstagram />,
+    url: "https://www.instagram.com/team_moto_build/",
+    tooltip: "Instagram",
+  },
+  // {
+  //   icon: <IoLogoTwitter />,
+  //   url: "https://twitter.com/redqinc",
+  //   tooltip: "Twitter",
+  // },
+  // {
+  //   icon: <IoLogoLinkedin />,
+  //   url: "https://www.linkedin.com/company/redqinc/",
+  //   tooltip: "Linked In",
+  // },
+]
 
 interface MyFormValues {
   firstName: string
   email: string
+  phone: String
+  company:String
   message: string
 }
 
@@ -27,7 +62,7 @@ const SignupSchema = Yup.object().shape({
 const Contact: React.SFC<{}> = () => {
   return (
     <Formik
-      initialValues={{ firstName: "", email: "", message: "" }}
+      initialValues={{ firstName: "", email: "", phone: "", company: "", message: "" }}
       onSubmit={(
         values: MyFormValues,
         actions: FormikActions<MyFormValues>
@@ -51,13 +86,17 @@ const Contact: React.SFC<{}> = () => {
           <Form>
             <ContactWrapper>
               <ContactPageTitle>
-                <h2>Contact</h2>
+              <h5>0.3</h5>
+                <h2 style={{color:'#e60000'}}>GET IN TOUCH</h2>
                 <p>
-                  StoryHub theme comes with a contact form built-in. You can use
-                  this form with Gatsbay Js service and get up to 50 submissions
-                  for free per form per month. Also, you can easily switch to
-                  another service if you want.
+                Interest sparked in Team Moto Build? Ready to rev? Give us your deets, ask us any questions and tell us your 
+                team size and target dates for your build. We’ll be in touch in a flash.
                 </p>
+               
+                <h3>
+                Phone:  
+                </h3><h4 style={{color:'#e60000'}}>312.953.0869</h4>
+                <h3>Email:</h3> <h4>Fun@TeamMotoBuild.com</h4>
               </ContactPageTitle>
               <ContactFromWrapper>
                 <InputGroup>
@@ -85,6 +124,34 @@ const Contact: React.SFC<{}> = () => {
                       errors.email && touched.email ? errors.email : ""
                     }`}
                   />
+                  
+                </InputGroup>
+                <InputGroup>
+                <Input
+                    type="tel"
+                    name="phone"
+                    value={`${values.phone}`}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    label="Phone Number"
+                    placeholder="123-4567-8901"
+                    notification={`${
+                      errors.phone && touched.phone
+                        ? errors.phone
+                        : ""
+                    }`}
+                  />
+                  <Input
+                    type="text"
+                    name="company"
+                    value={`${values.company}`}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    label="Company"
+                    notification={`${
+                      errors.company && touched.company ? errors.company : ""
+                    }`}
+                  />
                 </InputGroup>
                 <Input
                   type="textarea"
@@ -104,6 +171,9 @@ const Contact: React.SFC<{}> = () => {
                   loader="Submitting.."
                 />
               </ContactFromWrapper>
+              <SocialProfiles>
+          <SocialProfile items={SocialLinks} />
+        </SocialProfiles>
             </ContactWrapper>
           </Form>
         </>

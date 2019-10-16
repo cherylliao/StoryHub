@@ -113,7 +113,7 @@ const Posts: React.FunctionComponent<PostsProps> = () => {
               loader="Loading.."
             />
           ) : (
-            <p>No more posts</p>
+            <p></p>
           )}
         </LoadMoreButton>
       </PostRow>

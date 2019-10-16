@@ -50,13 +50,30 @@ export const InputGroup = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   .field-wrapper {
     flex-grow: 1;
     max-width: calc(50% - 30px);
     margin-bottom: 60px;
     @media (max-width: 575px) {
       max-width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+`
+export const SocialProfiles = styled.div`
+  margin-top: 60px;
+  position: relative;
+  @media (max-width: 767px) {
+    margin-top: 40px;
+  }
+  &:before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #292929;
+    display: block;
+    margin-bottom: 60px;
+    @media (max-width: 767px) {
       margin-bottom: 40px;
     }
   }
