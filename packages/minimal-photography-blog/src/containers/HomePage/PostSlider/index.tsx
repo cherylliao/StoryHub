@@ -97,10 +97,12 @@ const SimpleSwiper = () => {
   return (
     <PostSliderWrapper>
       <Swiper {...params}>
-        {Posts.map(({ node }: any) => (
+        {
+          Posts.map(({ node }: any) => (
           <div key={node.fields.slug}>
             <PostSlideCard
               title={node.frontmatter.title || node.fields.slug}
+              
               image={
                 node.frontmatter.cover == null
                   ? null
@@ -109,9 +111,12 @@ const SimpleSwiper = () => {
               url={node.fields.slug}
               tags={node.frontmatter.tags}
               description={node.frontmatter.description || node.excerpt}
-            ></PostSlideCard>
+            >
+
+            </PostSlideCard>
           </div>
-        ))}
+        ))
+        }
       </Swiper>
     </PostSliderWrapper>
   )

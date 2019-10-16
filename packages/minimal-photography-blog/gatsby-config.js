@@ -4,9 +4,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `StoryHub`,
-    author: `Monnisa`,
-    about: `Every company has a story to tell, so break out your storytelling skills from that random English class you took years ago and put them to work on your “About Us” page. Using descriptive and emotive copy and gorgeous graphics, an “About Us” page with a story works.`,
+    title: `TEAM MOTO BUILD`,
+    author: `TEAM MOTO BUILD`,
+    about: `FIND YOUR INNER BIKER`,
     description: `A Gatsby Blog`,
     siteUrl: `https://storyhub-image-tarex.redq.now.sh`,
   },

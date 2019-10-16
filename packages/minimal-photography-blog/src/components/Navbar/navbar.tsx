@@ -22,19 +22,19 @@ type NavbarProps = {
 
 const MenuItems = [
   {
-    label: "Home",
-    url: "/",
-  },
-  {
-    label: "About",
+    label: "LETS BUILD",
     url: "/about",
   },
   {
-    label: "Contact",
+    label: "ACTION SHOTS",
+    url: "/",
+  },
+  {
+    label: "GET IN TOUCH",
     url: "/contact",
   },
   {
-    label: "404 Page",
+    label: "WHAT BUILDERS SAY",
     url: "/404",
   },
 ]

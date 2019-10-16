@@ -43,17 +43,17 @@ const ImageCard: React.FunctionComponent<ImageCardProps> = ({
     <ImageCardWrapper className={addClass.join(" ")} {...props}>
       {image == null ? null : (
         <PostPreview className="post_preview">
-          <Link to={url}>
+          {/* <Link to={url}> */}
             {imageType === "fluid" ? (
               <Img fluid={image} alt="post preview" />
             ) : (
               <Img fixed={image} alt="post preview" />
             )}
-          </Link>
-        </PostPreview>
+          {/* </Link> */}
+         </PostPreview>
       )}
 
-      <PostDetails className="post_details">
+      {/* <PostDetails className="post_details">
         {tags == null ? null : (
           <PostMeta>
             <PostTags className="post_tags">
@@ -81,7 +81,7 @@ const ImageCard: React.FunctionComponent<ImageCardProps> = ({
         <ReadMore className="read_more">
           <Link to={url}>Read More</Link>
         </ReadMore>
-      </PostDetails>
+      </PostDetails> */}
     </ImageCardWrapper>
   )
 }
