@@ -4,11 +4,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Software Engineer`,
+    title: `I MAKE EFFECTIVE SOFTWARE`,
     author: `Cheryl`,
-    about: `A fullstack web developer eager to transform your business.  
-    I write functional styled component that transfer the logic across the whole web
-    application.`,
+    about: `*Digitize your presence  *Revolutionize your idea`,
     description: `A Gatsby Blog`,
     siteUrl: `https://storyhub-minimal-tarex.redq.now.sh`,
   },
@@ -125,8 +123,8 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username:`sixcheryl` ,
-        access_token:`3664950668.1677ed0.ed1d9947d5ab4088a14ec24d6b0be411` ,
+        username: `sixcheryl`,
+        access_token: `3664950668.1677ed0.ed1d9947d5ab4088a14ec24d6b0be411`,
         instagram_id: `3664950668`,
       },
     },
