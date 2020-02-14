@@ -1,11 +1,11 @@
 ---
-title: This is ecommerce!
-date: '2019-10-08'
-description: 'fully scalable ecommerce'
-tags: ['react', 'database', 'ecommerce']
+title: Monster Search!
+date: '2020-02-14'
+description: 'API with search'
+tags: ['react', 'search', 'api']
 cover: './preview.jpg'
 ---
 
-This is an ecommerce application running on MongoDB backend.  Secure login authorizations only allow registered users access.  Admin has private routes and dashboard to monitor products and traffic.  Products can be searched based on price and categories.  Comes with cart for checking out.  Written in React Hooks in the functional paradigm.  
+This is a search application that fetches monster information from an API then lay them out in card format. Demonstrate component architecture in React.js. Search bar enables users to search for certain monsters.
 
-<a href="http://178.128.101.192">Check out the live demo</a>
+<a href="https://cherylliao.github.io/monsters-search/">Check out the live demo</a>
